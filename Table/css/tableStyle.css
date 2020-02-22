@@ -45,9 +45,21 @@ nav ul li {
 }
 
 .avtivePage {
-	border-bottom: 5px solid #1034a6;
-	box-shadow: 0px 2px 15px #1034a6;
-	padding-bottom: 20px;
+    border-bottom: 5px solid #1034a6;
+    box-shadow: 0px 0px 5px #1034a6,
+                0px 0px 25px #1034a6,
+                0px 0px 50px #1034a6,
+                0px 0px 200px #1034a6;
+    padding-bottom: 20px;
+}
+
+.inActivePage:hover{
+    transition-duration: 0.3s;
+    border-bottom: 5px solid #a65110;
+    box-shadow: 0px 0px 5px #a65110,
+                0px 0px 25px #a65110,
+                0px 0px 50px #a65110,
+                0px 0px 200px #a65110;
 }
 
 .footer tr td {
@@ -55,19 +67,18 @@ nav ul li {
 }
 
 .logo {
-	width: 50px;
+	width: 40px;
 }
 
 .footer {
-	/* position: absolute; */
 	color: black;
 	left: 0;
-	/* top: 1900px; */
 	position: relative;
-	top: 50px;
+	top: 100px;
+	height: auto;
 	width: 100%;
 	background: linear-gradient(white, #1034a6);
-	padding-top: 30px;
+	/* padding-top: 30px; */
 	display: flex;
 	justify-content: space-around;
 }
@@ -131,8 +142,6 @@ nav ul li {
 
 body {
 	padding: 0 2em;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
 	color: #444;
 	background: #eee;
 }
@@ -141,9 +150,12 @@ body table tr td img {
 	width: 200px;
 	height: 150px;
 	border-radius: 5%;
+	/* margin: 0 auto 0 auto; */
+	/* justify-content: center; */
 }
 
 .rwd-table {
+	/* padding: 0 2em; */
 	position: relative;
 	top: 100px;
 	background: #34495e;
@@ -154,6 +166,10 @@ body table tr td img {
 
 .rwd-table tr {
 	border-color: #46637f;
+}
+
+.rwd-table td{
+	justify-items: center;
 }
 
 .rwd-table th, .rwd-table td {
