@@ -59,10 +59,12 @@ nav ul li {
 }
 
 .footer {
-	position: absolute;
+	/* position: absolute; */
 	color: black;
 	left: 0;
-	top: 1900px;
+	/* top: 1900px; */
+	position: relative;
+	top: 50px;
 	width: 100%;
 	background: linear-gradient(white, #1034a6);
 	padding-top: 30px;
