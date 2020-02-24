@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/contactStyle.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/images/logo.PNG" alt="logo">
+            <ul>
+                <a href="../index.html">
+                    <li class="inActivePage">Home</li>
+                </a>
+                <a href="../Table/tableIndex.html">
+                    <li class="inActivePage">Specs</li>
+                </a>
+                <a href="./ReviewIndex.html">
+                    <li class="inActivePage">Reviews</li>
+                </a>
+                <li class="avtivePage">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="./reply.html">
+        <fieldset>
+            <legend> Contact Information </legend>
+            <label for="name">Name:: </label><br>
+            <input type="text" id="name" name="Name" maxlength="50" placeholder="Name" required><br>
+            <label for="ad"> Address::</label><br>
+            <textarea id="ad" name="address" cols="30" rows="5" maxlength="255" required></textarea><br>
+            <label for="Ciy">City:: </label><br>
+            <input id="Ciy" type="text" name="city" placeholder="city" maxlength="50" required><br>
+            <label for="PR">Province/State:: </label><br>
+            <input id="PR" type="text" name="pr" maxlength="20" placeholder="Province/state" required><br>
+            <label for="cory">country</label>
+            <select id="cory" required>
+                <option value="ca">Canada</option>
+                <option value="us">USA</option>
+            </select><br>
+            <label for="Ci">Zip Code:: </label><br>
+            <input type="text" id="Ci" name="zip" maxlength="7" required placeholder="ex. A1B-2C3"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Prefered Language</legend>
+            <label for="eng">English: </label>
+            <input type="radio" id="eng" name="radio"><br>
+            <label for="Fr">French: </label>
+            <input type="radio" id="Fr" name="radio"><br>
+            <label for="other">Other: </label>
+            <input type="text" id="other" name="other" placeholder="Please Mention." maxlength="50">
+        </fieldset>
+        <fieldset>
+            <legend>Login Information:</legend>
+            <label for="emil">Email:: </label><br>
+            <input type="email" id="emil" name="email" placeholder="ex. abc@xyz.com" maxlength="128" required><br>
+            <label for="pas">Password:: </label><br>
+            <input type="password" id="pas" name="pass" placeholder="Password" maxlength="8" required><br>
+            <label for="ps">Confirm Password:: </label><br>
+            <input id="ps" type="password" name="pass" maxlength="8" placeholder="Confirm Password" required>
+        </fieldset>
+        <input id="1" type="checkbox" name="check">
+        <label for="1">I agree to receive Information about new products.</label><br>
+        <input id="2" type="checkbox" name="check">
+        <label for="2">I agree to complay with the company rules.</label><br>
+
+        <button type="submit">Continue</button>
+    </form>
+
+
+    <footer class="footer">
+        <table>
+            <tr>
+                <td><img class="logo" src="../assets/images/icons8-google-maps.svg" alt="location"></td>
+                <td>2100 Boulevard de Maisonneuve East, Montréal, QC H2K 4S1.</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><img class="logo" src="../assets/images/phone.svg" alt="phn"></td>
+                <td>+1-438-342-2426</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><img class="logo" src="../assets/images/mail.svg" alt="mail"></td>
+                <td>info@isi-mtl.com</td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
