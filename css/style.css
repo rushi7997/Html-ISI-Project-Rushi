@@ -138,3 +138,11 @@ main aside img:hover {
     display: flex;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 768px){
+    nav ul{
+        flex-direction: column;
+        position: relative;
+        left: 5%;
+    }
+}

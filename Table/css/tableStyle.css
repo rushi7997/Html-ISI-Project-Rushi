@@ -10,6 +10,7 @@ header {
 	top: 0px;
 	left: 0px;
 	width: 100%;
+	height: auto;
 }
 
 nav {
@@ -184,4 +185,18 @@ body table tr td img {
 
 .rwd-table th, .rwd-table td:before {
 	color: #dd5;
+}
+
+@media only screen and (max-width: 768px){
+    nav ul{
+        flex-direction: column;
+        position: relative;
+        left: 5%;
+	}
+	.rwd-table{
+		top: 300px;
+	}
+	.footer{
+		top: 300px;
+	}
 }
